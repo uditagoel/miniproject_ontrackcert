@@ -2,28 +2,45 @@
 <html>
 <head>
     <title>Certify - Your Digital Gateway to Official Certificates</title>
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="web.js">
 </head>
 <body>
+    <header class="login-header">
+        <div class="logo-sign-in">
+          <h1>OnTrackCert</h1>
+          <p>Your Digital Gateway to Official Certificates</p>
+        </div>
+      </header>
+  
 
-    <main>
+    <main class="login-main">
+        <img class="back-img1" src="laptop.webp">
         <h1>Login</h1>
-        <h3>Welcome Back</h3>
-        <form>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
+        <h2>Welcome Back</h2>
+        <div class="login-form">
+            <!-- <div> -->
+            <label class="login-label" for="email">Email:</label>
+            <input class="login-input" type="email" id="email" name="email" placeholder="Enter your email">
+            </br>
+            <label class="login-label" for="password">Password:</label>
+            <input class="login-input" type="password" id="password" name="password" placeholder="Enter your password">
+        </br>
+        <!-- </div> -->
+            <a href="#" class="login-a">Forgot Password?</a>
             <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password">
-            <br>
-            <a href="#">Forgot Password?</a>
-            <br>
-            <button type="submit">Login</button>
-        </form>
+            <p>Don't have an account? <span><a href="#" class="login-a">Sign Up</a></span></p>
+            <button class="login-button" id="login">Login</button>
+    </div>
     </main>
 
-    <footer>
-        </footer>
+
 </body>
+<script>
+    document.getElementById('login').addEventListener('click', function () {
+        // Change the URL to navigate to page2.html
+        window.location.href = 'login.html';
+    });
+</script>
 </html>
+
